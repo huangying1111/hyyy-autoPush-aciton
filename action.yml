@@ -1,0 +1,13 @@
+name: 'hyyy-autoPush-action'
+description: '实时存储上传本地数据'
+inputs:
+  token:
+    required: true
+    description: 'GITHUB_TOKEN'
+  commitMessage:
+    required: false
+    description: '更新提交内容'
+    default: '自动更新'
+runs:
+  using: 'node20'
+  main: 'index.js'
